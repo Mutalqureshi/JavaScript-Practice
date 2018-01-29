@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Untitled</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="author" href="humans.txt">
+    </head>
+    <body>
+    	<p id="demo-2">Mutal</p>
+        <p id="demo" style="display: none;"></p>
+        <script>
+        	function myFunction(){
+        		var d = new Date();
+        		var n = d.getSeconds(); 
+        		document.getElementById('demo').innerHTML = n;
+
+        		var f = document.getElementById('demo-2').style;
+        		f.fontSize = n + "px";
+        	}
+        	setInterval(myFunction,1000);
+        	
+        </script>
+    </body>
+</html>

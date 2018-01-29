@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Untitled</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="author" href="humans.txt">
+    </head>
+    <p id="demo"></p>
+    <body>
+        
+        <script>
+        	function bio(name,fathername,age){
+        		this.name = name;
+        		this.fathername = fathername;
+        		this.age = age;
+
+        	}
+        	var student_one = new bio("Mutal","Naeem",17);
+     			document.getElementById("demo").innerHTML  = student_one.name;
+        </script>
+    </body>
+</html>

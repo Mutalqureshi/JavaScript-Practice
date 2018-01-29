@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Untitled</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="author" href="humans.txt">
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+        	var space = 5;
+        	for (var i = 1; i <=5 ; i++) {
+				for (var x = 1; x <= space; x++) {
+					document.getElementById('demo').innerHTML += "&nbsp;";
+				};
+				space--;        		
+
+
+					for (var star = 1; star <= 2*i-1; star++) {
+						document.getElementById('demo').innerHTML += "*";
+					};			
+					document.getElementById('demo').innerHTML += "<br>";
+
+        	};
+
+        	var space = 1;
+        	for (var i = 5; i >=1 ; i--) {
+				for (var x = space; x >= 1; x--) {
+					document.getElementById('demo').innerHTML += "&nbsp;";
+				};
+				space++;        		
+
+
+					for (var star = 2*i-1; star >= 1; star--) {
+						document.getElementById('demo').innerHTML += "*";
+					};			
+					document.getElementById('demo').innerHTML += "<br>";
+
+        	};
+        </script>
+    </body>
+</html>

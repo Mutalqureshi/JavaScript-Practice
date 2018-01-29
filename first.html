@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Untitled</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="author" href="humans.txt">
+    </head>
+    <body>
+        <input type="password" id="one">
+        <button id="btn" onclick="myFunction()">Button</button>
+        <button id="btn" onclick="twofun()">Button-2</button>
+        <script>
+        		var x = document.getElementById("one");
+        	function myFunction(){
+        		if (x.type == "password") {
+        			x.type = "text";
+        		}
+        		else{
+        			x.type = "password"
+        		}
+        	};
+        	function twofun(){
+        		var y = document.getElementById("one").value;
+        		alert(y);
+
+        	}
+        </script>
+    </body>
+</html>
